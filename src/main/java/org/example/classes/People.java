@@ -76,6 +76,16 @@ public class People {
         name = surname = number = email =  null;
     }
 
+    public People(People people)
+    {
+        this.id_people = people.id_people;
+        this.name = people.name;
+        this.surname = people.surname;
+        this.date_of_birth = people.date_of_birth;
+        this.number = people.number;
+        this.email = people.email;
+    }
+
     //constructor with parameters
     public People(int id_people, String name, String surname, LocalDate date_of_birth, String number, String email)
     {
@@ -100,6 +110,6 @@ public class People {
 
     public String toString()
     {
-        return get_id_people() + " " + get_name() + " " + get_surname() + " " + get_date_of_birth().toString() + " " + get_number() + " " + get_email();
+        return "\n" + get_id_people() + " " + get_name() + " " + get_surname() + " " + get_date_of_birth().toString() + " " + get_number() + " " + get_email();
     }
 }

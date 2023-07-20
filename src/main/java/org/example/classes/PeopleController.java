@@ -1,13 +1,13 @@
 package org.example.classes;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class PeopleController
 {
     private String file_name = null;
+
+    private ArrayList<People> people_list = new ArrayList<>();
 
     public PeopleController(String file_name)
     {
@@ -16,7 +16,6 @@ public class PeopleController
 
     public ArrayList<People> get_people()
     {
-        ArrayList<People> people_list = new ArrayList<>();
 
         BufferedReader br = null;
 
@@ -39,4 +38,27 @@ public class PeopleController
 
         return people_list;
     }
+
+    public ArrayList<People> add_people(People p)
+    {
+        People people = new People(p);
+        people_list.add(people);
+        return people_list;
+    }
+
+    public void save_to_file(People p)
+    {
+        BufferedWriter br = null;
+
+        try {
+            br = new BufferedWriter(new FileWriter(file_name, true));
+            br.write(p.toString());
+            br.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 }
