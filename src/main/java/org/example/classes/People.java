@@ -1,8 +1,5 @@
 package org.example.classes;
-
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 
 public class People {
 
@@ -63,8 +60,6 @@ public class People {
     {
         return this.date_of_birth = date_of_birth;
     }
-
-
 
     public String set_number(String number)
     {
