@@ -3,10 +3,6 @@ package org.example;
 import org.example.classes.People;
 import org.example.classes.PeopleController;
 import org.example.classes.cls;
-
-import javax.swing.text.html.parser.Parser;
-import java.io.PrintWriter;
-import java.io.Writer;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -50,8 +46,8 @@ public class Main {
                 new cls();
 
                 scan.nextLine();
-                for (int i = 0; i < people_list.size(); i++) {
-                    System.out.println(people_list.get(i).toString());
+                for (People people : people_list) {
+                    System.out.println(people.toString());
                 }
 
                 System.out.println(" ");
@@ -77,7 +73,7 @@ public class Main {
                 p = new People(people_list.size() + 1, name, surname, date_of_birth, number, email);
 
                 pc.add_people(p);
-                pc.save_to_file(people_list);
+                pc.save_to_file();
 
                 System.out.println(" ");
                 System.out.print("\r\n<< Enter key to return to the main menu >>");
@@ -109,7 +105,7 @@ public class Main {
 
                     p = new People(index, name, surname, date_of_birth, number, email);
                     pc.edit_people(index, p);
-                    pc.save_to_file(people_list);
+                    pc.save_to_file();
                 }
 
                 System.out.println(" ");
