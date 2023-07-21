@@ -100,6 +100,6 @@ public class People {
 
     //toString print function
     public String toString() {
-        return "\n" + get_id_people() + " " + get_name() + " " + get_surname() + " " + get_date_of_birth().toString() + " " + get_number() + " " + get_email();
+        return get_id_people() + " " + get_name() + " " + get_surname() + " " + get_date_of_birth().toString() + " " + get_number() + " " + get_email() + "\n";
     }
 }
