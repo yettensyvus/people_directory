@@ -1,5 +1,4 @@
 1 Andrițoiu Cerasela 1976-02-27 +4096080168 andrițoiu.cerasela@gmail.com
-2 Gălățescu Norman 1987-05-23 +4056644472 gălățescu.norman@hotmail.com
 3 Mercureanu Teodora 1981-03-20 +4058011538 mercureanu.teodora@yahoo.com
 4 Kiriacescu Iustinian 1996-08-18 +4023398730 kiriacescu.iustinian@gmail.com
 5 Ciortescu Matilda 2003-04-09 +4017808646 ciortescu.matilda@gmail.com
@@ -48,4 +47,3 @@
 48 Miuțescu Haralamb 1997-08-23 +4013806564 miuțescu.haralamb@yahoo.com
 49 Hrimiuc Gherghina 1989-10-15 +4077855451 hrimiuc.gherghina@hotmail.com
 50 Ghidel Norman 1999-11-01 +4020085035 ghidel.norman@hotmail.com
-51 Alex Straton 2005-05-05 +373654561889 alex@mail.ru
